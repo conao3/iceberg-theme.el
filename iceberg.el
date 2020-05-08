@@ -36,6 +36,17 @@
   :group 'tools
   :link '(url-link :tag "Github" "https://github.com/conao3/iceberg.el"))
 
+(defun iceberg-dark--reload-theme nil
+  "Reload iceberg theme."
+  (interactive)
+  (eval-buffer)
+  (load-theme 'solarized-iceberg-dark t))
+
+;; pick "#e5c06d" "#d33682" out of iceberg palette
+(solarized-create-theme-file-with-palette 'dark 'solarized-iceberg-dark
+  '("#161821" "#c6c8d1" "#e5c06d" "#e2a478" "#e27878" "#d33682" "#a093c7" "#84a0c6" "#89b8c2" "#b4be82")
+  nil)
+
 (provide 'iceberg)
 
 ;; Local Variables:
