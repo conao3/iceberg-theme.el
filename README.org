@@ -26,7 +26,9 @@
 * Description
 Well-designed, eye-friendly, dark blue color scheme.
 
-[[https://github.com/conao3/scratch-comment.el][https://raw.githubusercontent.com/conao3/files/master/blob/iceberg-theme.el/iceberg-theme.gif]]
+Original [[https://github.com/cocopon/iceberg.vim][iceberg]] for vim by [[https://github.com/cocopon][cocopon]].
+
+[[https://github.com/conao3/iceberg-theme.el][https://raw.githubusercontent.com/conao3/files/master/blob/iceberg-theme.el/iceberg-theme.png]]
 
 * Install
 #+begin_src emacs-lisp
