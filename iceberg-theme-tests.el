@@ -1,9 +1,9 @@
-;;; iceberg-tests.el --- Test definitions for iceberg  -*- lexical-binding: t; -*-
+;;; iceberg-theme-tests.el --- Test definitions for iceberg-theme  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2019  Naoya Yamashita
 
 ;; Author: Naoya Yamashita <conao3@gmail.com>
-;; URL: https://github.com/conao3/iceberg.el
+;; URL: https://github.com/conao3/iceberg-theme.el
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,19 +20,19 @@
 
 ;;; Commentary:
 
-;; Test definitions for `iceberg'.
+;; Test definitions for `iceberg-theme'.
 
 
 ;;; Code:
 
 (require 'cort)
-(require 'iceberg)
+(require 'iceberg-theme)
 
 
-;; (provide 'iceberg-tests)
+;; (provide 'iceberg-theme-tests)
 
 ;; Local Variables:
 ;; indent-tabs-mode: nil
 ;; End:
 
-;;; iceberg-tests.el ends here
+;;; iceberg-theme-tests.el ends here

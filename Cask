@@ -3,7 +3,7 @@
 (source gnu)
 (source melpa)
 
-(package-file "iceberg.el")
+(package-file "iceberg-theme.el")
 
 (development
  (depends-on "cort"))

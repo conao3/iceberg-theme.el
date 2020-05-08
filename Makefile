@@ -3,8 +3,8 @@
 all:
 
 REPO_USER    := conao3
-PACKAGE_NAME := iceberg
-REPO_NAME    := iceberg.el
+PACKAGE_NAME := iceberg-theme
+REPO_NAME    := iceberg-theme.el
 
 EMACS        ?= emacs
 ELS          := $(shell cask files)

@@ -1,4 +1,4 @@
-;;; iceberg.el --- Well-designed, eye-friendly, dark blue color scheme  -*- lexical-binding: t; -*-
+;;; iceberg-theme.el --- Well-designed, eye-friendly, dark blue color scheme  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2020  Naoya Yamashita
 
@@ -6,7 +6,7 @@
 ;; Version: 0.0.1
 ;; Keywords: convenience
 ;; Package-Requires: ((emacs "26.1") (solarized-theme "1.3"))
-;; URL: https://github.com/conao3/iceberg.el
+;; URL: https://github.com/conao3/iceberg-theme.el
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -30,18 +30,18 @@
 
 (require 'solarized-theme)
 
-(defgroup iceberg nil
+(defgroup iceberg-theme nil
   "Well-designed, eye-friendly, dark blue color scheme."
-  :prefix "iceberg-"
+  :prefix "iceberg-theme-"
   :group 'tools
-  :link '(url-link :tag "Github" "https://github.com/conao3/iceberg.el"))
+  :link '(url-link :tag "Github" "https://github.com/conao3/iceberg-theme.el"))
 
 (defvar solarized-use-less-bold)
 (defvar solarized-scale-org-headlines)
 (defvar solarized-distinct-fringe-background)
 
-(defun iceberg-dark-load-theme ()
-  "Create iceberg color theme using solarized API.
+(defun iceberg-theme-dark-load-theme ()
+  "Create iceberg-theme color theme using solarized API.
 
 Solarized config pallete.
 
@@ -82,10 +82,10 @@ yellow orange red magenta violet blue cyan green"
        `(sh-quoted-exec ((,class (:foreground ,violet)))))))
   (load-theme 'solarized-iceberg-dark t))
 
-(provide 'iceberg)
+(provide 'iceberg-theme)
 
 ;; Local Variables:
 ;; indent-tabs-mode: nil
 ;; End:
 
-;;; iceberg.el ends here
+;;; iceberg-theme.el ends here
