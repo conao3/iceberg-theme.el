@@ -56,13 +56,30 @@ yellow orange red magenta violet blue cyan green"
   (setq solarized-scale-org-headlines nil)
   (setq solarized-distinct-fringe-background t)
   (solarized-create-theme-file-with-palette 'dark 'solarized-iceberg-dark
-    '("#161821" "#c6c8d1" "#e2a478" "#e27878" "#e27878" "#84a0c6" "#a093c7" "#b4be82" "#89b8c2" "#84a0c6")
+    '("#161821" "#c6c8d1" "#e2a478" "#e27878" "#e27878" "#84a0c6" "#b4be82" "#a093c7" "#89b8c2" "#84a0c6")
     '((custom-theme-set-faces
        theme-name
        `(default ((,class (:foreground ,base3 :background ,base03))))
        `(vertical-border ((,class (:foreground ,base03))))
        `(mode-line ((,class (:foreground ,base2 :background ,base02))))
-       `(mode-line-inactive ((,class (:foreground ,base0 :background ,base03)))))))
+       `(mode-line-inactive ((,class (:foreground ,base0 :background ,base03))))
+
+       `(font-lock-comment-face ((,class (:foreground ,base0))))
+       `(font-lock-preprocessor-face ((,class (:foreground ,green))))
+       `(font-lock-type-face ((,class (:foreground ,green))))
+       `(font-lock-builtin-face ((,class (:foreground ,violet :weight ,s-maybe-bold :slant ,s-maybe-italic))))
+       `(font-lock-variable-name-face ((,class (:inherit default))))
+       `(font-lock-function-name-face ((,class (:foreground ,green))))
+       `(font-lock-constant-face ((,class (:foreground ,green))))
+
+       `(css-selector ((,class (:foreground ,green))))
+       `(diff-hunk-header ((,class (:foreground ,cyan))))
+       `(diff-added ((,class (:background ,violet-1bg :foreground ,violet-1fg))))
+       `(diff-indicator-added ((t (:foreground ,violet))))
+       `(markdown-header-face ((,class (:foreground ,yellow))))
+       `(markdown-inline-code-face ((,class (:foreground ,blue))))
+       `(markdown-pre-face ((,class (:foreground ,base1))))
+       `(sh-quoted-exec ((,class (:foreground ,violet)))))))
   (load-theme 'solarized-iceberg-dark t))
 
 (provide 'iceberg)
