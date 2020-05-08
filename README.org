@@ -25,6 +25,9 @@
 
 * Description
 Well-designed, eye-friendly, dark blue color scheme.
+
+[[https://github.com/conao3/scratch-comment.el][https://raw.githubusercontent.com/conao3/files/master/blob/iceberg-theme.el/iceberg-theme.gif]]
+
 * Install
 #+begin_src emacs-lisp
   (leaf iceberg-theme :ensure t)
