@@ -36,16 +36,34 @@
   :group 'tools
   :link '(url-link :tag "Github" "https://github.com/conao3/iceberg.el"))
 
-(defun iceberg-dark--reload-theme nil
-  "Reload iceberg theme."
-  (interactive)
-  (eval-buffer)
-  (load-theme 'solarized-iceberg-dark t))
+(defvar solarized-use-less-bold)
+(defvar solarized-scale-org-headlines)
+(defvar solarized-distinct-fringe-background)
 
-;; pick "#e5c06d" "#d33682" out of iceberg palette
-(solarized-create-theme-file-with-palette 'dark 'solarized-iceberg-dark
-  '("#161821" "#c6c8d1" "#e5c06d" "#e2a478" "#e27878" "#d33682" "#a093c7" "#84a0c6" "#89b8c2" "#b4be82")
-  nil)
+(defun iceberg-dark-load-theme ()
+  "Create iceberg color theme using solarized API.
+
+Solarized config pallete.
+
+brightest                                   darkest
+base03 base02 base01 base00 base0 base1 base2 base3
+
+topic 8 colors
+yellow orange red magenta violet blue cyan green"
+  (interactive)
+
+  (setq solarized-use-less-bold t)
+  (setq solarized-scale-org-headlines nil)
+  (setq solarized-distinct-fringe-background t)
+  (solarized-create-theme-file-with-palette 'dark 'solarized-iceberg-dark
+    '("#161821" "#c6c8d1" "#e2a478" "#e27878" "#e27878" "#84a0c6" "#a093c7" "#b4be82" "#89b8c2" "#84a0c6")
+    '((custom-theme-set-faces
+       theme-name
+       `(default ((,class (:foreground ,base3 :background ,base03))))
+       `(vertical-border ((,class (:foreground ,base03))))
+       `(mode-line ((,class (:foreground ,base2 :background ,base02))))
+       `(mode-line-inactive ((,class (:foreground ,base0 :background ,base03)))))))
+  (load-theme 'solarized-iceberg-dark t))
 
 (provide 'iceberg)
 
