@@ -93,8 +93,7 @@ yellow orange red magenta violet blue cyan green"
        `(php-paamayim-nekudotayim ((,class (:foreground ,green))))
        `(php-object-op ((,class (:foreground ,cyan))))
        `(php-variable-name ((,class (:foreground ,cyan))))
-       `(php-variable-sigil ((,class (:foreground ,cyan)))))))
-  (load-theme 'solarized-iceberg-dark t))
+       `(php-variable-sigil ((,class (:foreground ,cyan))))))))
 
 (provide 'iceberg-theme)
 
