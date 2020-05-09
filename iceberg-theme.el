@@ -36,10 +36,6 @@
   :group 'tools
   :link '(url-link :tag "Github" "https://github.com/conao3/iceberg-theme.el"))
 
-(defvar solarized-use-less-bold)
-(defvar solarized-scale-org-headlines)
-(defvar solarized-distinct-fringe-background)
-
 (defun iceberg-theme-create-theme ()
   "Create iceberg-theme color theme using solarized API.
 
@@ -51,9 +47,6 @@ base03 base02 base01 base00 base0 base1 base2 base3
 yellow orange red magenta violet blue cyan green"
   (interactive)
 
-  (setq solarized-use-less-bold t)
-  (setq solarized-scale-org-headlines nil)
-  (setq solarized-distinct-fringe-background t)
   (solarized-create-theme-file-with-palette 'dark 'solarized-iceberg-dark
     '("#161821" "#c6c8d1" "#e2a478" "#e27878" "#e27878" "#a093c7" "#b4be82" "#84a0c6" "#89b8c2" "#84a0c6")
     '((custom-theme-set-faces
