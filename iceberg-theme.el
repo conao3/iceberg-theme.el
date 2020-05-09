@@ -40,7 +40,7 @@
 (defvar solarized-scale-org-headlines)
 (defvar solarized-distinct-fringe-background)
 
-(defun iceberg-theme-dark-load-theme ()
+(defun iceberg-theme-create-theme ()
   "Create iceberg-theme color theme using solarized API.
 
 Solarized pallete.
