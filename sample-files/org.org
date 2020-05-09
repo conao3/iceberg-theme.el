@@ -1,4 +1,3 @@
-# -*- org-html-link-up: "http://home.fnal.gov/~neilsen/"; org-html-link-home: "http://home.fnal.gov/~neilsen" -*-
 #+TITLE:     Emacs org-mode examples and cookbook
 #+AUTHOR:    Eric H. Neilsen, Jr.
 #+EMAIL:     neilsen@fnal.gov
