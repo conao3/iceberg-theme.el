@@ -43,12 +43,11 @@
 (defun iceberg-theme-dark-load-theme ()
   "Create iceberg-theme color theme using solarized API.
 
-Solarized config pallete.
+Solarized pallete.
 
 brightest                                   darkest
 base03 base02 base01 base00 base0 base1 base2 base3
 
-topic 8 colors
 yellow orange red magenta violet blue cyan green"
   (interactive)
 
@@ -56,7 +55,7 @@ yellow orange red magenta violet blue cyan green"
   (setq solarized-scale-org-headlines nil)
   (setq solarized-distinct-fringe-background t)
   (solarized-create-theme-file-with-palette 'dark 'solarized-iceberg-dark
-    '("#161821" "#c6c8d1" "#e2a478" "#e27878" "#e27878" "#84a0c6" "#b4be82" "#a093c7" "#89b8c2" "#84a0c6")
+    '("#161821" "#c6c8d1" "#e2a478" "#e27878" "#e27878" "#a093c7" "#b4be82" "#84a0c6" "#89b8c2" "#84a0c6")
     '((custom-theme-set-faces
        theme-name
        `(default ((,class (:foreground ,base3 :background ,base03))))
@@ -66,24 +65,20 @@ yellow orange red magenta violet blue cyan green"
 
        `(font-lock-comment-delimiter-face ((,class (:foreground "#6b7089"))))
        `(font-lock-comment-face ((,class (:foreground "#6b7089"))))
-       `(font-lock-preprocessor-face ((,class (:foreground ,violet))))
-       `(font-lock-variable-name-face ((,class (:foreground ,violet))))
-       `(font-lock-type-face ((,class (:foreground ,green))))
-       `(font-lock-builtin-face ((,class (:foreground ,magenta))))
-       `(font-lock-function-name-face ((,class (:foreground ,green))))
-       `(font-lock-constant-face ((,class (:foreground ,green))))
+       `(font-lock-preprocessor-face ((,class (:foreground ,green)))) ; yellow
+       `(font-lock-type-face ((,class (:foreground ,cyan)))) ; yellow
+       `(font-lock-builtin-face ((,class (:foreground ,green)))) ; base0
 
-       `(css-selector ((,class (:foreground ,green))))
        `(diff-function ((,class (:foreground ,violet-1fg))))
-       `(diff-header ((,class (:foreground ,magenta))))
-       `(diff-hunk-header ((,class (:foreground ,magenta))))
-       `(diff-file-header ((,class (:background ,base03 :foreground ,magenta))))
+       `(diff-header ((,class (:foreground ,green))))
+       `(diff-hunk-header ((,class (:foreground ,green))))
+       `(diff-file-header ((,class (:background ,base03 :foreground ,green))))
        `(diff-added ((,class (:background ,violet-1bg :foreground ,violet-1fg))))
        `(diff-indicator-added ((t (:foreground ,violet))))
-       `(markdown-header-rule-face ((,class (:foreground ,green))))
        `(markdown-header-face ((,class (:foreground ,yellow))))
+       `(markdown-header-rule-face ((,class (:foreground ,green))))
        `(markdown-markup-face ((,class (:inherit default))))
-       `(markdown-url-face ((,class (:foreground ,blue))))
+       `(markdown-url-face ((,class (:foreground ,magenta))))
        `(markdown-link-face ((,class (:foreground ,green :underline t))))
        `(markdown-inline-code-face ((,class (:foreground ,cyan))))
        `(markdown-pre-face ((,class (:foreground ,cyan))))
