@@ -37,7 +37,7 @@
   :link '(url-link :tag "Github" "https://github.com/conao3/iceberg-theme.el"))
 
 ;;;###autoload
-(defun iceberg-theme-create-theme ()
+(defun iceberg-theme-create-theme-file ()
   "Create iceberg-theme color theme using solarized API.
 
 Solarized pallete.
