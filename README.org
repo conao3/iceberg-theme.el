@@ -36,7 +36,7 @@ Original [[https://github.com/cocopon/iceberg.vim][iceberg]] for vim by [[https:
     :ensure t
     :config
     (iceberg-theme-create-theme-file)
-    (load-theme "solarized-iceberg-dark" t))
+    (load-theme 'solarized-iceberg-dark t))
 #+end_src
 
 * Usage
