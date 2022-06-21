@@ -104,7 +104,7 @@ yellow orange red magenta violet blue cyan green"
        `(php-variable-sigil ((,class (:foreground ,cyan))))))))
 
 ;;;###autoload
-(define-obsolete-function-alias 'iceberg-theme-create-theme 'iceberg-theme-create-theme-file)
+(define-obsolete-function-alias 'iceberg-theme-create-theme 'iceberg-theme-create-theme-file "28")
 
 (provide 'iceberg-theme)
 
