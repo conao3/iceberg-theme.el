@@ -5,7 +5,7 @@
 ;; Author: Naoya Yamashita <conao3@gmail.com>
 ;; Version: 1.0.1
 ;; Keywords: convenience
-;; Package-Requires: ((emacs "26.1") (solarized-theme "1.3"))
+;; Package-Requires: ((emacs "28.1") (solarized-theme "1.3"))
 ;; URL: https://github.com/conao3/iceberg-theme.el
 
 ;; This program is free software: you can redistribute it and/or modify
