@@ -3,6 +3,7 @@
 ;; Copyright (C) 2020  Naoya Yamashita
 
 ;; Author: Naoya Yamashita <conao3@gmail.com>
+;; Assisted-by: Codex:GPT-6
 ;; Version: 1.0.1
 ;; Keywords: convenience
 ;; Package-Requires: ((emacs "28.1") (solarized-theme "2.1.0"))
@@ -104,7 +105,7 @@ yellow orange red magenta violet blue cyan green"
        `(php-variable-sigil ((,class (:foreground ,cyan))))))))
 
 ;;;###autoload
-(define-obsolete-function-alias 'iceberg-theme-create-theme 'iceberg-theme-create-theme-file "28")
+(define-obsolete-function-alias 'iceberg-theme-create-theme #'iceberg-theme-create-theme-file "28")
 
 (provide 'iceberg-theme)
 
